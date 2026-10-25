@@ -1,0 +1,233 @@
+/* All Common CSS End  */
+*{
+  margin: 0;
+  padding: 0;
+ font-family: "Roboto", sans-serif;
+
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+   text-decoration: none; 
+}
+ .container{
+    width: 1320px;
+    margin: 0 auto;
+ }
+ /* All Common CSS  End  */
+
+
+#headerpart{
+    padding: 30px;
+    background-color: transparent;
+    position: absolute;
+    left: 190px;
+    
+    z-index: 2;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    column-gap:30px ;
+}
+.menu ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .4s;
+    position: relative;
+    color: yellow;
+}
+.menu ul li a:hover{
+    color: brown;
+}
+.menu ul li a::after{
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background: rgb(37, 37, 182);
+    content: "";
+    transition: .4s;
+}
+.menu ul li a:hover::after{
+    width: 100%;
+    
+}
+#bannerpart{
+    background-image: url(../images/banner.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.overly{
+    background: rgba(0, 0, 0, 0.295);
+    height: 800px;
+    position: relative;
+}
+.content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.content h1{
+    position: absolute;
+    bottom: 40px;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: rgb(93, 155, 206);
+}
+.content p{
+    font-size: 20px;
+}
+.btn{
+    border: 2px solid black;
+    padding: 8px 16px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: yellow;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: rgba(255, 0, 0, 0.658);
+    border: 5px solid yellow;
+}
+
+.about{
+    padding: 200px;
+    background: rgb(90, 90, 190);
+    margin-top: 50px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.about h1{
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about h1::after{
+    height: 4px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: "";
+}
+.about p{
+    font-size: 20px;
+}
+.about ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+#servicepart h1{
+    text-align: center;
+    margin-top:30px ;
+}
+.service-container{
+    width: 1320px;
+    margin: 0 auto;
+   display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+
+}
+.service-card{
+    height: 500px;
+    width: 400px;
+    background-color: rgb(74, 74, 172);
+    border-radius: 10px;
+    position: relative;
+}
+img {
+    border-radius: 8px;
+}
+.service-content{
+    padding: 20px;
+}
+.s-btn{
+    border: 2px solid yellow;
+    padding: 8px 16px;
+    color: black;
+    position: absolute;
+    top: 85%;
+    font-size: 20px;
+    transition: .5s;
+}
+.s-btn:hover{
+    background: yellow;
+    border:2px solid black;
+}
+.contact{
+    padding: 300px;
+    background-color: rgb(95, 95, 245);
+    margin-top: 50px;
+    border-radius: 10px;
+    position: relative;
+}
+.contact h2{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact h2::after{
+    height: 3px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+}
+.form{
+    background-color: #fff;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    left:50px;
+
+}
+.form input{
+    display: block;
+    margin: 30px;
+    padding: 16px 24px;
+}
+.c-btn{
+    border: none;
+    padding: 8px 16px;
+    background-color: blueviolet;
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+  
+}
+.c-btn:hover{
+    border: 2px solid sienna;
+
+}
+iframe{
+    margin-left: 200px;
+    position: absolute;
+    top: 70px;
+}
